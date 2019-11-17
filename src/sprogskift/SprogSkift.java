@@ -7,10 +7,14 @@ public class SprogSkift {
 	public static SprogI sprog = new Dansk();
 	//public static DogList dogs; 
 	public static DogListI dogs; 
+	public static DogListLL dogsLL; 
 	
 	static Scanner sc;
 	public static void main(String[] args) throws FileNotFoundException {
-	dogs = new DogListCSV("Data/dogsOffspringtest.csv");
+	dogs = new DogListCSV("Data/playforddogsOffSpring.csv");
+	//dogs = new DogListCSV("Data/dogsOffspringtest.csv");
+	//dogs = new DogListLL("Data/dogsOffspringtest.csv");
+	dogs = new DogListLL("Data/playforddogsOffSpring.csv");
 	//dogs = new DogList("Data/dogsOffspringtest.csv");
 		int choice = 0;
 		sc = new Scanner(System.in);

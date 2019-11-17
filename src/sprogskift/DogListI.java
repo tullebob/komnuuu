@@ -1,10 +1,10 @@
 package sprogskift;
 
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
+import java.util.List;
 
 public interface DogListI {
-	public ArrayList<Dog> dogList(String filename)throws FileNotFoundException;
+	public List<Dog> dogList(String source);
 	public void printList(int numofdogs);
 	
 }
