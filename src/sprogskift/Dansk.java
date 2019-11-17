@@ -20,5 +20,10 @@ public class Dansk {
 		System.out.println("9) afslut programmet");
 		System.out.println("Indstast valg: ");
 	}
+	public void printLang() {
+		System.out.println("Skift sprog: ");
+		System.out.println("1) Dansk");
+		System.out.println("2) Engelsk");
+	}
 	
 }

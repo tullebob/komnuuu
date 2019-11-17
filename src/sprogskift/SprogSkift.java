@@ -16,10 +16,12 @@ public class SprogSkift {
 	/**
 	 * @param args the command line arguments
 	 */
+	static Dansk sprog;
+	static Scanner sc;
 	public static void main(String[] args) {
 		int choice = 0;
-		Scanner sc = new Scanner(System.in);
-		Dansk sprog = new Dansk();
+		sc = new Scanner(System.in);
+		sprog = new Dansk();
 		sprog.printMenu();
 		while (choice != 9) {
 			choice = sc.nextInt();
@@ -33,6 +35,15 @@ public class SprogSkift {
 			}
 		}
 		// print en menu
+	}
+	public static void changeLanguage() {
+		sprog.printLang(); 
+		int langchoice = sc.nextInt();
+		switch(langchoice) {
+			case 1: sprog = new Dansk();break;
+			case 2: sprog = new Engelsk();break;
+		}
+		
 	}
 	
 }
