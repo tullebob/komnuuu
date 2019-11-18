@@ -1,5 +1,5 @@
 package sprogskift;
-public class Engelsk {
+public class Engelsk implements sprog1 {
 
 	public void printMenu() {
 		System.out.println("Welcome to dogexchange");
@@ -14,6 +14,7 @@ public class Engelsk {
 		System.out.println("change language: ");
 		System.out.println("1) Danish");
 		System.out.println("2) English");
+		System.out.println("3) Spanish");
 	}
 	
 }
